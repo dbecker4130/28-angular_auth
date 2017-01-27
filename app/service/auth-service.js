@@ -41,8 +41,8 @@ function authService($q, $log, $http, $window) {
 
   service.signup = function(user) {
     $log.debug('authService.signup()');
-
     let url = `${__API_URL__}/api/signup`; // eslint-disable-line
+    console.log(url);
     let config = {
       headers: {
         'Content-Type': 'application/json',
