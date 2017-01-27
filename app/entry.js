@@ -19,21 +19,21 @@ context.keys().forEach( path => {
 
 context = require.context('./view/', true, /\.js$/);
 context.keys().forEach( key => {
-  let name = pascalcase(path.basename(key, ',js'));
+  let name = pascalcase(path.basename(key, '.js'));
   let module = context(key);
   cfgram.controller(name, module);
 });
 
-context = require.context('./sevice/', true, /\.js$/);
+context = require.context('./service/', true, /\.js$/);
 context.keys().forEach( key => {
-  let name = camelcase(path.basename(key, ',js'));
+  let name = camelcase(path.basename(key, '.js'));
   let module = context(key);
   cfgram.service(name, module);
 });
 
 context = require.context('./component/', true, /\.js$/);
 context.keys().forEach( key => {
-  let name = camelcase(path.basename(key, ',js'));
+  let name = camelcase(path.basename(key, '.js'));
   let module = context(key);
   cfgram.component(name, module);
 });

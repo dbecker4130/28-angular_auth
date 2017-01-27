@@ -1,7 +1,7 @@
 <section class="signup">
   <form class="signup-form"
     ng-submit="signupCtrl.signup(signupCtrl.user)"
-    novalidate>
+    no-validate>
 
     <input class="input-std"
       type="text"
@@ -17,9 +17,9 @@
     <input class="input-std"
       type="password"
       placeholder="password"
-      ng-monlength="3"
+      ng-minlength="3"
       ng-model="signupCtrl.user.password" required>
 
-    <input type="submit" value="sign up">
+    <input type="submit" class="btn-std" value="sign up">
   </form>
 </section>

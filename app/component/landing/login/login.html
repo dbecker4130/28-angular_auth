@@ -6,7 +6,7 @@
     <div
       ng-class="{
         'error': loginForm.username.$invalid,
-        'success': loginForm.username.$valid
+        'success': loginForm.username.$valid,
       }">
       <input type="text"
           name="username"
@@ -20,7 +20,7 @@
     <div
       ng-class="{
         'error': loginForm.password.$invalid && loginForm.$submited,
-        'success': loginForm.password.valid
+        'success': loginForm.password.$valid,
       }">
       <input type="password"
         name="password"
