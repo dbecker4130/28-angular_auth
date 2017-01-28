@@ -1,0 +1,32 @@
+// @import "../../scss/lib/theme/vars";
+
+
+
+.signup {
+  width: 80%;
+  height: 90vw;
+  margin: 0 auto;
+  background: #888;
+
+}
+
+.signup-form {
+
+  .input-std {
+    width: 90%;
+    height: 6vw;
+    margin: 2vw;
+  }
+
+  .btn-std {
+    width: 30%;
+    height: 6vw;
+    margin: 2vw;
+    padding: 1%;
+    border-radius: 3px;
+    float: right;
+
+
+  }
+
+}
