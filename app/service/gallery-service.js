@@ -13,7 +13,7 @@ function galleryService($q, $log, $http, authService) {
 
     return authService.getToken()
     .then( token => {
-      let url = `${__API_URL__}/api/gallery`;
+      let url = `${__API_URL__}/api/gallery`; // eslint-disable-line
       let config = {
         headers: {
           Accept: 'application/json',
@@ -42,13 +42,14 @@ function galleryService($q, $log, $http, authService) {
 
     return authService.getToken()
     .then( token => {
-      let url = `${__API_URL__}/api/gallery/${galleryID}`;
+      let url = `${__API_URL__}/api/gallery/${galleryID}`; // eslint-disable-line
       let config = {
         headers: {
           Accept: 'application/json',
           Authorization: `Bearer ${token}`
         }
       };
+      return $http.delete(url, config);
     });
   };
 
@@ -57,14 +58,14 @@ function galleryService($q, $log, $http, authService) {
 
     return authService.getToken()
     .then( token => {
-      let url = `${__API_URL__}/api/gallery`;
+      let url = `${__API_URL__}/api/gallery`; // eslint-disable-line
       let config = {
         headers: {
           Accept: 'application/json',
           Authorization: `Bearer ${token}`
         }
       };
-      return $http.get(url, config)
+      return $http.get(url, config);
     })
     .then( res => {
       $log.log('galleries retrieved');

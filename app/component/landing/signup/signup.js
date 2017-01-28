@@ -1,6 +1,7 @@
 'use strict';
 
-// require('./_signup.scss');
+require('../../../scss/main.scss');
+
 
 module.exports = {
   template: require('./signup.html'),

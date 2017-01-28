@@ -1,6 +1,6 @@
 'use strict';
 
-require('../scss/main.scss');
+require('../../scss/main.scss');
 
 module.exports = {
   template: require('./navbar.html'),
@@ -11,7 +11,7 @@ module.exports = {
 function NavbarController($log, $location, $rootScope, authService) {
   $log.debug('NavbarController');
 
-  this.checkPAth = function() {
+  this.checkPath = function() {
     let path = $location.path();
 
     if (path === '/join') {
