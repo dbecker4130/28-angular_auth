@@ -1,1 +1,43 @@
+@import "../../scss/lib/theme/vars";
 
+.navbar {
+  height: 8vw;
+  margin: 10% 10% 0 10%;
+  background: $brand-primary;
+  padding-top: 2vw;
+  clear: both;
+
+  nav {
+    img {
+      width: 5vw;
+      height: 5vw;
+      padding-left: 2vw;
+      float: left;
+    }
+
+    span {
+      font-family: $font-primary;
+      color: $white;
+      font-size: 3vw;
+      font-weight: 100;
+      padding-left: 1vw;
+      padding-top: 1vw;
+      float: left;
+    }
+
+    div {
+      .btn-sm {
+        float: right;
+        width: 12vw;
+        height: 4vw;
+        margin-right: 5vw;
+        background: $brand-secondary;
+        border: none;
+        border-radius: 3px;
+        margin-top: 1vw;
+
+      }
+    }
+  }
+
+}
