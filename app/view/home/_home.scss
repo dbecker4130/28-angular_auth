@@ -3,4 +3,29 @@
   height: 100vw;
   margin-left: 10%;
   margin-right: 10%;
+
+  .gallery-section {
+    margin: 10% 5% 10% 5%;
+    font-family: $font-primary;
+    color: $brand-primary;
+    ul {
+      margin-top: $gutter-sm;
+      max-height: 50vw;
+      overflow: auto;
+
+      li {
+        background: $brand-terciary;
+        margin: $gutter-std 0;
+        padding: $gutter-std;
+        border-radius: 5px;
+        span {
+          display: block;
+          padding-bottom: 1vw;
+          font-family: $font-primary;
+          color: $brand-primary;
+        }
+      }
+    }
+
+  }
 }
