@@ -17,11 +17,12 @@
     ng-if="!landingCtrl.showSignup">
     <div class="join-inner">
       <login></login>
-      <p>want to signup?</p>
-      <a href="/#/join#signup"
+      <div class="other-page">
+      <span>want to signup?</span>
+      <span><a href="/#/join#signup"
         ng-click="landingCtrl.showSignup=true">
         sign up here
-      </a>
+      </a></span>
     </div>
   </div>
 </section>

@@ -1,7 +1,22 @@
-
+.join-container {
+  background: $brand-secondary;
+  height: 100vw;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
 .other-page {
   clear: both;
   float: right;
-  text-align: right;
+  padding-top: 2vw;
+  padding-right: 6vw;
+  font-family: $font-primary;
+  font-size: 2vw;
+
+  a {
+    text-decoration: none;
+    color: $brand-primary;
+    font-weight: bold;
+  }
+
 }
