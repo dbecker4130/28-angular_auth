@@ -1,6 +1,6 @@
 'use strict';
 
-require('../../../scss/main.scss');
+require('./_edit-gallery.scss');
 
 module.exports = {
   template: require('./edit-gallery.html'),
