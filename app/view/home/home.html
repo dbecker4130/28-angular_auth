@@ -3,11 +3,7 @@
   <div class="gallery-section">
     <h2>Galleries</h2>
     <ul>
-      <li ng-repeat="gallery in homeCtrl.galleries">
-        <span>name: {{ gallery.name }}</span>
-        <span>description: {{ gallery.desc }}</span>
-        <span>id: {{ gallery._id }}</span>
-      </li>
+      <gallery-item ng-repeat="item in homeCtrl.galleries" gallery="item"></gallery-item>
     </ul>
   </div>
 </section>
