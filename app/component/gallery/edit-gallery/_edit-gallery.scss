@@ -15,15 +15,26 @@
     fieldset {
       .input-std {
         padding: 1vw;
-        height: 2.5vw;
-        border: none;
+        min-height: 2vw;
+        width: 80%;
+        border: 1px solid $brand-primary;
         background: #C0C0C0;
         border-radius: 5px;
 
       }
+      .input-two{
+        padding: 1vw;
+        min-height: 2vw;
+        width: 70%;
+        border: 1px solid $brand-primary;
+        background: #C0C0C0;
+        border-radius: 5px;
+        margin-top: 2vw;
+
+      }
       .item-label {
         font-weight: bold;
-        padding: 1vw;
+        padding: 0 1vw;
       }
     }
 
