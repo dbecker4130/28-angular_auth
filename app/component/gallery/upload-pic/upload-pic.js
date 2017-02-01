@@ -18,7 +18,6 @@ function UploadPicController($log, picService) {
 
   this.uploadPic = function() {
     picService.uploadGalleryPic(this.gallery, this.pic)
-
     .then( () => {
       this.pic.name = null;
       this.pic.desc = null;
