@@ -3,13 +3,13 @@
 
 .home {
   background: $brand-secondary;
-  height: 120vw;
+  height: auto;
   margin-left: 10%;
   margin-right: 10%;
 
   .gallery-section {
     overflow: auto;
-    // height: 70vw;
-    height: 20vw;
+    height: 60vw;
+    // height: 20vw;
   }
 }
