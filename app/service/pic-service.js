@@ -12,7 +12,7 @@ function picService($q, $log, $http, Upload, authService) {
 
     return authService.getToken()
     .then( token => {
-      let url = `${__API_URL__}/api/gallery/${galleryData._id}/pic`;
+      let url = `${__API_URL__}/api/gallery/${galleryData._id}/pic`; // eslint-disable-line
 
       let headers = {
         Authorization: `Bearer ${token}`,
