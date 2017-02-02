@@ -1,5 +1,22 @@
 @import "../../../scss/lib/theme/vars";
 
 .thumbnail {
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: $gutter-std;
+  }
 
+  .btn-std {
+    background: $brand-primary;
+    color: $white;
+    float: right;
+    padding: 2% 12%;
+    border-radius: 5px;
+    font-family: $font-primary;
+    font-size: 2vw;
+    font-weight: 100;
+    margin-top: $gutter-std;
+
+  }
 }
