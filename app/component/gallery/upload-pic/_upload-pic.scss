@@ -2,7 +2,6 @@
 
 .upload-pic {
   h3 {
-    margin-left: $gutter-std;
     margin-bottom: $gutter-sm;
     text-decoration: underline;
     font-size: 3vw;
@@ -10,11 +9,9 @@
   }
 
   .input-std {
-    width: 84%;
+    width: 92.5%;
     height: 6vw;
-    margin-left: $gutter-std;
     margin-bottom: $gutter-std;
-    margin-right: $gutter-std;
     padding-left: 5vw;
     border: 1px solid $brand-terciary;
     border-radius: 5px;
@@ -23,14 +20,13 @@
   }
   div {
     .grab-img {
-      margin-left: $gutter-std;
       margin-bottom: $gutter-sm;
       text-decoration: underline;
       font-size: 2vw;
       font-family: $font-primary;
       float: left;
       padding-top: 1.5vw;
-      padding-left: 30%
+      padding-left: 40%;
     }
 
     .btn-std {
@@ -40,7 +36,6 @@
       padding: 1%;
       border-radius: 5px;
       border: none;
-      margin-right: $gutter-std;
       background: $brand-primary;
       color: $white;
       font-family: $font-primary;

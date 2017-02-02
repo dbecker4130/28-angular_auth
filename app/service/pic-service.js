@@ -51,6 +51,19 @@ function picService($q, $log, $http, Upload, authService) {
         }
       };
       return $http.delete(url, config);
+    })
+    .then( () => {
+      $log.log('pic deleted from DOM');
+      for (let i = 0; i < galleryData.pics.length; i ++) {
+        if (galleryData.pics[i]._id === picData._id) {
+          galleryData.pics.splice(i, 1);
+        }
+      }
+      return;
+    })
+    .catch(err => {
+      $log.error(err.message);
+      return $q.reject(err);
     });
 
   };

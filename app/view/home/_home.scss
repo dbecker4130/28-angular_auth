@@ -9,7 +9,13 @@
 
   .gallery-section {
     overflow: auto;
-    height: 60vw;
-    // height: 20vw;
+    height: 30vw;
+  }
+
+  .thumbnail-container {
+    height: 90vw;
+    overflow: auto;
+    margin-left: $gutter-std;
+    margin-right: $gutter-std;
   }
 }
