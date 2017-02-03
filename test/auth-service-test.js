@@ -28,16 +28,47 @@ describe('Auth Service', function() {
     });
   });
 
-  // describe('authService.logout()', () => {
-  //   it('should remove a token', () => {
-  //
-  //     this.authService.getToken();
-  //     this.$window.localStorage.removeItem('token', 'test token');
-  //
-  //     this.authService.logout()
-  //     .then( token => {
-  //       expect(token).toEqual(null);
-  //     });
-  //   });
-  // });
+  describe('authService.login()', () => {
+
+    it('should allow user to login', () => {
+
+      let testUser = {
+        username: 'userName',
+        password: 'userPassword',
+      };
+
+      let base64 = this.$window.btoa(`${testUser.username}:${testUser.password}`);
+
+      let headers = {
+        Accept: 'application/json',
+        Authorization: `Basic ${base64}`,
+      };
+
+      this.$httpBackend.expectGET('http://localhost:3000/api/login', headers)
+      .respond(200, 'test token');
+
+      this.authService.login(testUser)
+      .then(token => {
+        expect(token).toBe('test token');
+      });
+
+      this.$httpBackend.flush();
+    });
+  });
 });
+
+
+//   describe('authService.logout()', () => {
+//     it('should remove a token', () => {
+//       this.authService.token = null;
+//       this.$window.localStorage.setItem('token', 'test token');
+//
+//       this.authService.logout()
+//       .then( token => {
+//         expect(token).toEqual(null);
+//       });
+//
+//       this.$rootScope.$apply();
+//     });
+//   });
+// });

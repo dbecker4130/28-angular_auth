@@ -54,4 +54,36 @@ describe('Gallery Service', function() {
       this.$rootScope.$apply();
     });
   });
+
+  describe('galleryService.fetchGalleries()', () => {
+    it('should fetch a gallery', () => {
+      let headers = {
+        Authorization: 'Bearer test token',
+        Accept: 'application/json',
+      };
+
+      this.$httpBackend.expectGET('http://localhost:3000/api/gallery', headers).respond(200);
+      this.galleryService.fetchGalleries();
+      this.$httpBackend.flush();
+
+    });
+  });
+
+  describe('galleryService.updateGallery()', () => {
+    it('should update a gallery by ID', () => {
+      let galleryID = 'testid';
+      let galleryData = {
+        name: 'example gallery',
+        desc: 'example description'
+      };
+      let headers = {
+        Authorization: 'Bearer test token',
+        Accept: 'application/json, text/plain, */*',
+      };
+
+      this.$httpBackend.expectPUT('http://localhost:3000/api/gallery/testid', headers);
+      this.galleryService.updateGallery(galleryID, galleryData);
+
+    });
+  });
 });
