@@ -19,11 +19,13 @@
 .signup-form {
 
   .input-std {
-    width: 80%;
+    width: 90%;
     height: 6vw;
     margin-left: $gutter-std;
     margin-bottom: $gutter-std;
     padding-left: 5vw;
+    font-size: 2vw;
+    box-sizing: border-box;
   }
 
   .btn-std {
@@ -33,7 +35,7 @@
     border-radius: 3px;
     border: none;
     float: right;
-    margin-right: 6vw;
+    margin-right: $gutter-std;
     background: $brand-primary;
     color: $white;
     font-family: $font-primary;
