@@ -16,7 +16,7 @@
 
 
   .input-std {
-    width: 86%;
+    width: 90%;
     height: 6vw;
     margin-left: $gutter-std;
     margin-bottom: $gutter-std;
@@ -25,6 +25,7 @@
     border: 1px solid $brand-terciary;
     border-radius: 5px;
     font-size: 2vw;
+    box-sizing: border-box;
   }
 
   .btn-std {
