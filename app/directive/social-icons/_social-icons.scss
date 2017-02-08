@@ -1,0 +1,39 @@
+@import "../../scss/lib/theme/vars";
+
+.all-icons {
+  .copyright {
+    clear: both;
+    margin-left: $gutter-std;
+    img {
+      height: 30px;
+      width: 30px;
+      float: left;
+      padding-top: 2%;
+    }
+
+    h2 {
+      float: left;
+      padding-top: 5%;
+    }
+  }
+  ul {
+    margin-right: $gutter-std;
+    padding-top: 2.5%;
+
+    .social-icon {
+      display: inline-block;
+      float: right;
+      background: url('../../assets/img/social-sprite.png');
+      height: 24px;
+      width: 24px;
+      border-radius: 5px;
+
+      &:nth-child(2) {
+        background-position: -24px 0px;
+      }
+      &:last-child {
+        background-position: -48px 0px;
+      }
+    }
+  }
+}
