@@ -6,7 +6,7 @@
   <div class="gallery-section">
     <ul>
       <gallery-item
-        ng-repeat="item in homeCtrl.galleries | gallerySearch: homeCtrl.gallerySearchTerm"
+        ng-repeat="item in homeCtrl.galleries | gallerySearch: homeCtrl.gallerySearchTerm | orderBy: 'name'"
         gallery="item"
         delete-done="homeCtrl.galleryDeleteDone(galleryData)"
         ng-click="homeCtrl.currentGallery=item">
