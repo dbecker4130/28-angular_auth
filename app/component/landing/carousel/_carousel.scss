@@ -1,0 +1,10 @@
+@import "../../../scss/lib/theme/vars";
+
+
+.carousel {
+  margin: $gutter-std*2 $gutter-sm;
+  img {
+    width: 100%;
+    height: 30vw;
+  }
+}
