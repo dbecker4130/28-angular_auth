@@ -11,9 +11,6 @@ module.exports = {
 function CarouselController($log) {
   $log.debug('CarouselController');
 
-  // let currentIndex = 0;
-  this.setIterval = 2000;
-  this.noWrapSlides = false;
   this.active = 0;
   this.slides = [
     {image: '../../../../app/assets/img/Joey-Sequence1.jpg', id: 0},
