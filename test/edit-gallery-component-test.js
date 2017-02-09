@@ -28,7 +28,7 @@ describe('Edit Gallery Component', function() {
 
   describe('editGalleryCtrl.updateGallery()', () => {
     it('should make a PUT request', () => {
-      let url = 'http://localhost:3000/api/gallery/12345';
+      let url = `${__API_URL__}/api/gallery/12345`;
       let headers = {
         'Accept': 'application/json',
         Authorization: 'Bearer test token',

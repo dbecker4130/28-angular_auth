@@ -14,7 +14,8 @@ describe('Create Gallery Component', function() {
   describe('createGalleryCtrl.createGallery()', () => {
     it('should create a gallery', () => {
       let createGalleryCtrl = this.$componentController('createGallery', null);
-      let url = 'http://localhost:3000/api/gallery';
+      // let url = 'http://localhost:3000/api/gallery';
+      let url = `${__API_URL__}/api/gallery`;
 
       let gallery = {
         name: 'name',
