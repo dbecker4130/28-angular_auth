@@ -1,5 +1,7 @@
 'use strict';
 
+require('./_home.scss');
+
 module.exports = ['$log', '$rootScope', 'galleryService', HomeController];
 
 function HomeController($log, $rootScope, galleryService) {
@@ -12,6 +14,12 @@ function HomeController($log, $rootScope, galleryService) {
     .then( galleries => {
       this.galleries = galleries.reverse();
     });
+  };
+
+  this.galleryDeleteDone = function(gallery) {
+    if (this.currentGallery._id === gallery._id) {
+      this.currentGallery = null;
+    }
   };
 
   this.fetchGalleries();

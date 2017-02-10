@@ -1,0 +1,16 @@
+@import "../../../scss/lib/theme/vars";
+
+.thumbnail-container {
+  height: auto;
+  overflow: auto;
+  margin-left: $gutter-std;
+  margin-right: $gutter-std;
+  padding-bottom: $gutter-std;
+  h3 {
+    font-family: $font-primary;
+    font-weight: 100;
+    font-size: 3vw;
+    margin-bottom: $gutter-std;
+  }
+
+}

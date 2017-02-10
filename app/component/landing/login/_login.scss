@@ -14,11 +14,13 @@
   }
 
   .input-std {
-    width: 80%;
+    width: 90%;
     height: 6vw;
     margin-left: $gutter-std;
     margin-bottom: $gutter-std;
     padding-left: 5vw;
+    box-sizing: border-box;
+    font-size: 2vw;
   }
 
   .btn-std {
@@ -28,7 +30,7 @@
     border-radius: 3px;
     border: none;
     float: right;
-    margin-right: 6vw;
+    margin-right: $gutter-std;
     background: $brand-primary;
     color: $white;
     font-family: $font-primary;

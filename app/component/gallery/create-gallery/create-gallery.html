@@ -1,26 +1,32 @@
 <section class="create-gallery">
 
-  <!-- <nav></nav> -->
   <p>Create a new gallery.</p>
 
   <form name="createGalleryForm"
     class='gallery-form'
     ng-submit="createGalleryCtrl.createGallery()">
+    <uib-accordion>
+      <fieldset uib-accordion-group class="panel-default" heading="name">
+        <!-- <label for="name"></label> -->
+        <input
+          name="name"
+          class="input-std"
+          placeholder="gallery name"
+          type="text"
+          ng-model="createGalleryCtrl.gallery.name" required>
+      </fieldset>
 
-    <input
-      name="name"
-      class="input-std"
-      placeholder="name"
-      type="text"
-      ng-model="createGalleryCtrl.gallery.name" required>
-
-    <input
-      name="desc"
-      class="input-std"
-      placeholder="description"
-      type="text"
-      ng-model="createGalleryCtrl.gallery.desc" required>
-
+      <fieldset uib-accordion-group class="panel-default" heading="description">
+        <!-- <label for="desc">description</label> -->
+        <input
+          name="desc"
+          class="input-std"
+          placeholder="gallery description"
+          type="text"
+          ng-model="createGalleryCtrl.gallery.desc" required>
+      </fieldset>
+    </uib-accordion>
     <button class="btn-std" type="submit">create gallery</button>
+    <h2>Galleries</h2>
   </form>
 </section>
